@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Study || Vue Examples</title>
+    <script src="//unpkg.com/vue"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="page in pages">
+                <h1>{{ page.title }}</h1>
+                <figure>
+                    <a :href="page.demoUrl" target="_blank">
+                        <img :src="page.imgUrl" :alt="page.title" />
+                    </a>
+                    <figcaption>{{ page.des }}</figcaption>
+                </figure>
+                <div class="info">
+                    <span>@{{ page.author }}</span>
+                    <a :href="page.tutorial" target="_blank">Tutorial</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data () {
+                return {
+                    pages: [
+                        {
+                            title: "title",
+                            imgUrl: "//www.baidu.com",
+                            des: "xxx, adkd",
+                            author: "airen",
+                            tutorial: "//www.w3cplus.com",
+                            demoUrl: "www.w"
+                        }
+                    ]
+                }
+            }
+        })
+    </script>
+</body>
+</html>
