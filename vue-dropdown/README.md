@@ -19,3 +19,5 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+By [@Jay Roberts](https://designhammer.com/about/staff/jay-roberts) from [Basic drop-down and v-model](https://designhammer.com/blog/reusable-vuejs-components-part-2-basic-drop-down-and-v-model) and [Autocomplete dropdown](https://designhammer.com/blog/reusable-vuejs-components-part-3-autocomplete-dropdown)
