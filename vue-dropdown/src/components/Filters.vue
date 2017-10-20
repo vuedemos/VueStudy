@@ -1,5 +1,6 @@
 <template>
   <div class="filters">
+    
     <div class="filter">
       <label for="basic-dropdown">Basic dropdown: </label>
       <select name="basic-dropdown" v-model="selectedFruit">
