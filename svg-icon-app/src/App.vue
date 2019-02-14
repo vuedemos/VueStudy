@@ -6,6 +6,8 @@
 
     <SvgSpritesIcon />
 
+    <h3>SVG Sprite Loader add SVG Icons</h3>
+    <SvgSpriteLoader />
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol viewBox="0 0 32 32" id="icon-facebook" fill="currentColor">
@@ -24,12 +26,14 @@
 <script>
 import VueOfficialSvgIcons from './components/VueOfficialSvgIcons'
 import SvgSpritesIcon from './components/SvgSpritesIcon'
+import SvgSpriteLoader from './components/SvgSpriteLoader'
 
 export default {
   name: 'app',
   components: {
     VueOfficialSvgIcons,
-    SvgSpritesIcon
+    SvgSpritesIcon,
+    SvgSpriteLoader
   }
 }
 </script>
