@@ -1,17 +1,36 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ChildComponent 
+      :professional = "professional"
+      :name = "name"
+      @one.native = "triggerOne"
+      @two = "triggerTwo"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChildComponent from './components/ChildComponent.vue'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      professional:  '屌丝码农',
+      name:'大漠'
+    }
+  },
   components: {
-    HelloWorld
+    ChildComponent
+  },
+  methods: {
+    triggerOne () {
+      console.log('one')
+    },
+    triggerTwo () {
+      console.log('two')
+    }
   }
 }
 </script>
