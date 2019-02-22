@@ -1,36 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <ChildComponent 
-      :professional = "professional"
-      :name = "name"
-      @one.native = "triggerOne"
-      @two = "triggerTwo"
-    />
+    <ComponentA />
   </div>
 </template>
 
 <script>
-import ChildComponent from './components/ChildComponent.vue'
+import ComponentA from './components/ComponentA.vue'
 
 export default {
   name: 'app',
-  data() {
-    return {
-      professional:  '屌丝码农',
-      name:'大漠'
-    }
-  },
   components: {
-    ChildComponent
-  },
-  methods: {
-    triggerOne () {
-      console.log('one')
-    },
-    triggerTwo () {
-      console.log('two')
-    }
+    ComponentA
   }
 }
 </script>
